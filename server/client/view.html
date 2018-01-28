@@ -1,0 +1,25 @@
+<table class="table">
+   				 <thead class="thead-dark">
+      				<tr>
+               <th>Sr no.</th>
+                <th>Image</th>
+      					<th>Name</th>
+        				<th>Description</th>
+        				<th>Price</th>
+        				
+        				
+      				</tr>
+    			</thead>
+    			<tbody >     				
+     				 <tr ng-repeat="x in obj">
+     				 <td>{{$index+1}}</td>
+             <td><img src="{{x.image}}" height="70" width="70"/></td>
+    				 <td>{{x.name}}</td>
+   					 <td>{{x.description}}</td>
+             <td>{{x.price}}
+             
+   					 
+  					 </tr>
+    			</tbody>
+
+  			</table>

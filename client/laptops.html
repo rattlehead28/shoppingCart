@@ -1,0 +1,53 @@
+
+
+ <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
+            
+            
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+
+          
+          <div ng-repeat="arr in laptop">
+            
+            <div class="col-lg-4 col-md-4 mb-4">
+              <div class="card h-100">
+                <a ng-click="detailsRedirect($index)"><img class="card-img-top" src="{{arr.image}}" alt=""></a>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a ng-click="detailsRedirect($index)">{{arr.name}}</a>
+                  </h4>
+                  <h5>{{arr.price|currency:"₹"}}</h5>
+                  <p class="card-text">{{arr.description}}</p>
+                  
+                </div>
+
+                <div class="card-footer">
+                  <!--<small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>-->
+                </div>
+              </div>
+            </div>
+          </div>
+            
+
+            
+
+           
+
+            
+           
+         
+
+        </div>
+        <!-- /.col-lg-9 -->
+
+      </div>
+      <!-- /.row -->
+
+    </div>
