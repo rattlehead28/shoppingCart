@@ -15,7 +15,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
     <script src="app.js"></script>
-
+    <script src="mainCtrl.js"></script>
     <script src="mobileCtrl.js"></script>
     <script src="laptopCtrl.js"></script>
     <script src="service.js"></script>
@@ -30,7 +30,7 @@
   </head>
 
   <body ng-controller="mainCtrl" ng-app="myApp">
-
+  
     
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
@@ -65,6 +65,7 @@
           </div>
 
         </div>
+        
     <div class="container">
       <div class="col-md-9">
         <div ui-view></div>
@@ -79,7 +80,7 @@
     </footer>-->
 
     
-    
+    <button ng-click='postData()'>POST</button>
 
   </body>
 

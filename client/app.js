@@ -40,7 +40,7 @@ pr.config(function($stateProvider,$urlRouterProvider){
 	})
 });
 
-angular.module('myApp').controller('mainCtrl',function(){
+// angular.module('myApp').controller('mainCtrl',function(){
 
 
-});
+// });

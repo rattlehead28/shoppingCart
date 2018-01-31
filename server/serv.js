@@ -1,4 +1,4 @@
-var obj=require('./mock.json');
+var obj=require('./model/mongoose.js');
 module.exports=obj;
 
 

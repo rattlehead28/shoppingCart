@@ -17,7 +17,7 @@ bd.use(bodyparser.json());
 
 exports.mainPage = function(req,res){
 
-	app.use(express.static("C:\\Users\\Kartikeya\\Desktop\\shoppingCart\\client"));
+	app.use(express.static("C:\\Users\\Kartikeya\\Desktop\\sp_2\\shoppingCart\\client"));
 }
 
 exports.mobileData = function(req,res){
@@ -50,3 +50,9 @@ exports.allData = function(req,res){
 
 
 };
+
+exports.postData = function(req,res){
+	console.log(req.body);
+	obj.collection.insertMany(req.body,function(err,data){});
+	console.log("Data Saved")
+}
