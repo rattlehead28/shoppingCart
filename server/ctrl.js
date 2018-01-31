@@ -47,11 +47,6 @@ exports.allData = function(req,res){
 	
  		res.json(d);
 	})
-}
-exports.postMethod = function(req,res){
 
 
-	//var urlData=url.parse(req.url,true);
-	//console.log(urlData);
-	console.log(req.body);
 };
