@@ -18,41 +18,37 @@ bd.use(bodyparser.json());
 exports.mainPage = function(req,res){
 
 	app.use(express.static("C:\\Users\\Kartikeya\\Desktop\\sp_2\\shoppingCart\\client"));
+
 }
 
 exports.mobileData = function(req,res){
 	
 
-	fs.readFile("./mock.json",function(err,data){
- 	var d = JSON.parse(data);
-	
- 	res.json(d);
- })
+	obj.fetchData().then(function(d){
+ 		res.json(d);
+	});
 }
 
 exports.laptopData = function(req,res){
 	
-	fs.readFile("./mock.json",function(err,data){
-		var d = JSON.parse(data);
-	
+	obj.fetchData().then(function(d){
  		res.json(d);
-	})
+	});
 
 };
 
 exports.allData = function(req,res){
 
-	fs.readFile("./mock.json",function(err,data){
-		var d = JSON.parse(data);
-	
+	obj.fetchData().then(function(d){
  		res.json(d);
-	})
+	});
+	
 
 
 };
 
 exports.postData = function(req,res){
 	console.log(req.body);
-	obj.collection.insertMany(req.body,function(err,data){});
+	obj.collection.insert(req.body,function(err,data){});
 	console.log("Data Saved")
 }
